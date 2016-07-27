@@ -1,0 +1,76 @@
+.menu-button
+  background: transparent
+  border: none
+  color: $text
+
+nav[role="navigation"]
+  position: fixed
+  width: 100%
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: $background
+  color: $text
+  z-index: 9
+  transition: opacity 250ms ease-in-out
+  opacity: 0
+  pointer-events: none
+
+  &.open
+    opacity: 0.95
+    pointer-events: all
+
+  ul
+    list-style: none
+    text-align: center
+    font-size: 2em
+    font-family: 'Abril Fatface', Neuton, "Georgia", serif
+    line-height: 1.5em
+    font-weight: 600
+    padding: 0
+    margin: 0
+    position: absolute
+    top: 1.97em
+    left: 0
+    right: 0
+
+    @include bp(30up)
+      font-size: 2.25em
+      top: 1.97em
+
+    @include bp(48up)
+      font-size: 3.375em
+      top: 1.23em
+
+    @include bp(98up)
+      top: 10em
+
+    li
+      padding: 0
+      width: auto
+      margin: 0 auto
+
+  a
+    color: $text
+    text-decoration: none
+    margin: 1em 0
+
+header[role="banner"]
+  position: fixed
+  top: 1em
+  left: 0
+  right: 0
+  background-color: $background
+  z-index: 99
+  padding: 1em 0
+  opacity: 0.95
+
+  .header-wrapper
+    margin: 0 auto
+    width: 80%
+
+    @include bp(48up)
+      width: 75%
+      max-width: 25em
+      margin: 0 auto

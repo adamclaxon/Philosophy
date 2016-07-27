@@ -1,0 +1,27 @@
+@mixin bp($point)
+  @if $point == 30up
+    @media (min-width: 30em)
+      @content
+  @else if $point == 38up
+    @media (min-width: 38.75em)
+      @content
+  @else if $point == 48up
+    @media (min-width: 48em)
+      @content
+  @else if $point == 61up
+    @media (min-width: 61.25em)
+      @content
+  @else if $point == 71up
+    @media (min-width: 71.25em)
+      @content
+  @else if $point == 80up
+    @media (min-width: 80em)
+      @content
+
+  @else if $point == 98up
+    @media (min-width: 98em)
+      @content
+
+$background: #fffff8
+$text: #444
+$aside: #7a7a7a
