@@ -1,9 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,400i,700,700i|Neuton:400,400i,700'
+
 @import 'mixins'
 @import 'nav'
+@import 'modular-scale/modular-scale'
 
 body
   font-size: 1.2em
-  line-height:  1.5em
+  line-height:  1.6em
   font-family: Neuton, "Georgia", serif
   color: $text
   background-color: $background
@@ -23,7 +26,7 @@ body
 article
   width: 80%
   position: relative
-  margin: 5em auto 10em
+  margin: 10em auto 10em
 
   @include bp(48up)
     width: 75%
@@ -31,7 +34,7 @@ article
 
   @include bp(61up)
     float: right
-    margin: 5em 10% 10em 5em
+    margin: 10em 10% 10em 10em
     width: 65%
 
   @include bp(71up)
@@ -67,9 +70,8 @@ header:not([role="banner"])::after
   content: ""
   width: 65px
   border-top: 2px solid #444
-  border-bottom: 1px dotted #999
   display: block
-  margin-bottom: 1.5em
+  margin-bottom: 2.25em
 
 p
   font-size: 1em
@@ -98,21 +100,19 @@ h6::after
 h1
   font-size: 2.0em
   margin: .25em 0 0.7em
-  width: 50%
   font-weight: 500
 
   @include bp(30up)
     font-size: 2.25em
-    width: 50%
 
   @include bp(48up)
     font-size: 3.375em
 
 h2
   font-size: 1.25em
-  margin: 3.375em 0 1em
+  margin: 3.375em 0 1.5em
   letter-spacing: 0.06em
-  line-height: 1.5em
+  line-height: 1.3em
   text-transform: uppercase
   font-weight: 600
 
@@ -141,13 +141,14 @@ blockquote
   font-size: 0.85em
 
   footer
-    font-size: 0.666em
+    font-size: 0.85em
     text-align: right
 
 .footnote
   display: none
   font-family: "Lato", "Gill Sans", Calibri, sans-serif
   margin: 1em 0 1.5em 1.5em
+  font-size: 0.85em
 
   &.display
     display: block
@@ -158,12 +159,12 @@ blockquote
     display: block
     float: left
     position: absolute
-    left: -13.781rem
-    width: 10.631rem
+    left: -16.931rem
+    width: 13.781rem
     text-align: right
     clear: both
     margin: -2rem 0 1rem
-    font-size: 1em
+    font-size: 0.85em
     line-height: 1.5em
     background-color: transparent
     border-radius: 2px

@@ -1,1 +1,267 @@
-.menu-button{background:transparent;border:none;color:#444}nav[role="navigation"]{position:fixed;width:100%;top:0;bottom:0;left:0;right:0;background:#fffff8;color:#444;z-index:9;-webkit-transition:opacity 250ms ease-in-out;transition:opacity 250ms ease-in-out;opacity:0;pointer-events:none}nav[role="navigation"].open{opacity:.95;pointer-events:all}nav[role="navigation"] ul{list-style:none;text-align:center;font-size:2em;font-family:"Abril Fatface",Neuton,"Georgia",serif;line-height:1.5em;font-weight:600;padding:0;margin:0;position:absolute;top:1.97em;left:0;right:0}@media (min-width: 30em){nav[role="navigation"] ul{font-size:2.25em;top:1.97em}}@media (min-width: 48em){nav[role="navigation"] ul{font-size:3.375em;top:1.23em}}@media (min-width: 98em){nav[role="navigation"] ul{top:10em}}nav[role="navigation"] ul li{padding:0;width:auto;margin:0 auto}nav[role="navigation"] a{color:#444;text-decoration:none;margin:1em 0}header[role="banner"]{position:fixed;top:1em;left:0;right:0;background-color:#fffff8;z-index:99;padding:1em 0;opacity:.95}header[role="banner"] .header-wrapper{margin:0 auto;width:80%}@media (min-width: 48em){header[role="banner"] .header-wrapper{width:75%;max-width:25em;margin:0 auto}}body{font-size:1.2em;line-height:1.5em;font-family:Neuton,"Georgia",serif;color:#444;background-color:#fffff8;margin:0}body::before{content:"";position:fixed;width:100%;top:0;border-top:1em solid #444;z-index:999}@media (min-width: 30em){body{font-size:1.4em}}article{width:80%;position:relative;margin:5em auto 10em}@media (min-width: 48em){article{width:75%;max-width:25em}}@media (min-width: 61.25em){article{float:right;margin:5em 10% 10em 5em;width:65%}}@media (min-width: 71.25em){article{margin-right:15%;width:30.357142857em;max-width:none}}@media (min-width: 80em){article{margin:10em auto 10em;float:none}}article a{color:#444;text-decoration:none;background:-webkit-linear-gradient(#fffff8, #fffff8),-webkit-linear-gradient(#fffff8, #fffff8),-webkit-linear-gradient(#444, #444);background:linear-gradient(#fffff8, #fffff8),linear-gradient(#fffff8, #fffff8),linear-gradient(#444, #444);background-size:.05em 1px,.05em 1px,1px 1px;background-repeat:no-repeat,no-repeat,repeat-x;text-shadow:.03em 0 #fffff8,-.03em 0 #fffff8,0 .03em #fffff8,0 -.03em #fffff8,.06em 0 #fffff8,-.06em 0 #fffff8,.09em 0 #fffff8,-.09em 0 #fffff8,.12em 0 #fffff8,-.12em 0 #fffff8,.15em 0 #fffff8,-.15em 0 #fffff8;background-position:0% 99%,100% 99%,0% 99%}article a:hover{color:#111}@media (min-width: 48em){.subtitle{font-size:1.5em;letter-spacing:.01em;line-height:1.3}}header:not([role="banner"])::after{height:2px;content:"";width:65px;border-top:2px solid #444;border-bottom:1px dotted #999;display:block;margin-bottom:1.5em}p{font-size:1em;vertical-align:baseline;margin-top:1.4rem;margin-bottom:1.4rem}h1,h2,h3{font-family:"Abril Fatface",Neuton,"Georgia",serif;line-height:1em;width:80%;font-weight:600}h4::after,h5::after,h6::after{content:"Consider reformatting your document.";color:red;margin-left:1em;text-decoration:none;font-style:italic;font-weight:400}h1{font-size:2em;margin:.25em 0 .7em;width:50%;font-weight:500}@media (min-width: 30em){h1{font-size:2.25em;width:50%}}@media (min-width: 48em){h1{font-size:3.375em}}h2{font-size:1.25em;margin:3.375em 0 1em;letter-spacing:.06em;line-height:1.5em;text-transform:uppercase;font-weight:600}h2::after{height:0;content:"";width:65px;border-top:1px dotted #444;display:block;margin:.666em 0 0}h3{font-family:"Lato","Gill Sans",Calibri,sans-serif;font-size:.85em;margin:3.375em 0 1em;letter-spacing:.05em;line-height:1.5em;font-weight:700;text-transform:uppercase}blockquote{margin:1em 1.5em 1.5em 1.5em;font-style:italic;font-family:"Lato","Gill Sans",Calibri,sans-serif;font-size:.85em}blockquote footer{font-size:.666em;text-align:right}.footnote{display:none;font-family:"Lato","Gill Sans",Calibri,sans-serif;margin:1em 0 1.5em 1.5em}.footnote.display{display:block}@media (min-width: 61.25em){.footnote{color:#7a7a7a;display:block;float:left;position:absolute;left:-13.781rem;width:10.631rem;text-align:right;clear:both;margin:-2rem 0 1rem;font-size:1em;line-height:1.5em;background-color:transparent;border-radius:2px}}.footnote::before{content:attr(data-footnote-count);font-size:.666em;vertical-align:top;margin:0 .3em 0 .15em;top:-0.4em;position:relative;font-family:Neuton,serif}.footnote-label{cursor:pointer}.footnote-label::after{content:attr(data-footnote-count);font-size:.666em;vertical-align:top;margin:0 .15em 0;top:-0.4em;position:relative;font-family:Neuton,serif}@media (min-width: 98em){.footnote-label{cursor:auto}}.sans{font-family:"Lato","Gill Sans",Calibri,sans-serif;letter-spacing:.03em}@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait){p{font-weight:500}body{font-size:1.55em}}@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape){p{font-weight:500}body{font-size:1.55em}}
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,400i,700,700i|Neuton:400,400i,700';
+.menu-button {
+  background: transparent;
+  border: none;
+  color: #444; }
+
+nav[role="navigation"] {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fffff8;
+  color: #444;
+  z-index: 9;
+  transition: opacity 250ms ease-in-out;
+  opacity: 0;
+  pointer-events: none; }
+  nav[role="navigation"].open {
+    opacity: 0.95;
+    pointer-events: all; }
+  nav[role="navigation"] ul {
+    list-style: none;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Abril Fatface", Neuton, "Georgia", serif;
+    line-height: 1.5em;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 1.97em;
+    left: 0;
+    right: 0; }
+    @media (min-width: 30em) {
+      nav[role="navigation"] ul {
+        font-size: 2.25em;
+        top: 1.97em; } }
+    @media (min-width: 48em) {
+      nav[role="navigation"] ul {
+        font-size: 3.375em;
+        top: 1.23em; } }
+    @media (min-width: 98em) {
+      nav[role="navigation"] ul {
+        top: 10em; } }
+    nav[role="navigation"] ul li {
+      padding: 0;
+      width: auto;
+      margin: 0 auto; }
+  nav[role="navigation"] a {
+    color: #444;
+    text-decoration: none;
+    margin: 1em 0; }
+
+header[role="banner"] {
+  position: fixed;
+  top: 1em;
+  left: 0;
+  right: 0;
+  background-color: #fffff8;
+  z-index: 99;
+  padding: 1em 0;
+  opacity: 0.95;
+  display: none; }
+  header[role="banner"] .header-wrapper {
+    margin: 0 auto;
+    width: 80%; }
+    @media (min-width: 48em) {
+      header[role="banner"] .header-wrapper {
+        width: 75%;
+        max-width: 25em;
+        margin: 0 auto; } }
+
+body {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  font-family: Neuton, "Georgia", serif;
+  color: #444;
+  background-color: #fffff8;
+  margin: 0; }
+  body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-top: 1em solid #444;
+    z-index: 999; }
+  @media (min-width: 30em) {
+    body {
+      font-size: 1.4em; } }
+
+article {
+  width: 80%;
+  position: relative;
+  margin: 10em auto 10em; }
+  @media (min-width: 48em) {
+    article {
+      width: 75%;
+      max-width: 25em; } }
+  @media (min-width: 61.25em) {
+    article {
+      float: right;
+      margin: 10em 10% 10em 10em;
+      width: 65%; } }
+  @media (min-width: 71.25em) {
+    article {
+      margin-right: 15%;
+      width: 30.357142857em;
+      max-width: none; } }
+  @media (min-width: 80em) {
+    article {
+      margin: 10em auto 10em;
+      float: none; } }
+  article a {
+    color: #444;
+    text-decoration: none;
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#444, #444);
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 99%, 100% 99%, 0% 99%; }
+    article a:hover {
+      color: #111; }
+
+@media (min-width: 48em) {
+  .subtitle {
+    font-size: 1.5em;
+    letter-spacing: 0.01em;
+    line-height: 1.3; } }
+
+header:not([role="banner"])::after {
+  height: 2px;
+  content: "";
+  width: 65px;
+  border-top: 2px solid #444;
+  display: block;
+  margin-bottom: 2.25em; }
+
+p {
+  font-size: 1em;
+  vertical-align: baseline;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem; }
+
+h1,
+h2,
+h3 {
+  font-family: "Abril Fatface", Neuton, "Georgia", serif;
+  line-height: 1em;
+  width: 80%;
+  font-weight: 600; }
+
+h4::after,
+h5::after,
+h6::after {
+  content: "Consider reformatting your document.";
+  color: red;
+  margin-left: 1em;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 400; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.25em 0 0.7em;
+  font-weight: 500; }
+  @media (min-width: 30em) {
+    h1 {
+      font-size: 2.25em; } }
+  @media (min-width: 48em) {
+    h1 {
+      font-size: 3.375em; } }
+
+h2 {
+  font-size: 1.25em;
+  margin: 3.375em 0 1.5em;
+  letter-spacing: 0.06em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600; }
+  h2::after {
+    height: 0;
+    content: "";
+    width: 65px;
+    border-top: 1px dotted #444;
+    display: block;
+    margin: 0.666em 0 0; }
+
+h3 {
+  font-family: "Lato", "Gill Sans", Calibri, sans-serif;
+  font-size: 0.85em;
+  margin: 3.375em 0 1em;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+blockquote {
+  margin: 1em 1.5em 1.5em 1.5em;
+  font-style: italic;
+  font-family: "Lato", "Gill Sans", Calibri, sans-serif;
+  font-size: 0.85em; }
+  blockquote footer {
+    font-size: 0.85em;
+    text-align: right; }
+
+.footnote {
+  display: none;
+  font-family: "Lato", "Gill Sans", Calibri, sans-serif;
+  margin: 1em 0 1.5em 1.5em;
+  font-size: 0.85em; }
+  .footnote.display {
+    display: block; }
+  @media (min-width: 61.25em) {
+    .footnote {
+      color: #7a7a7a;
+      display: block;
+      float: left;
+      position: absolute;
+      left: -16.931rem;
+      width: 13.781rem;
+      text-align: right;
+      clear: both;
+      margin: -2rem 0 1rem;
+      font-size: 0.85em;
+      line-height: 1.5em;
+      background-color: transparent;
+      border-radius: 2px; } }
+  .footnote::before {
+    content: attr(data-footnote-count);
+    font-size: 0.666em;
+    vertical-align: top;
+    margin: 0 0.3em 0 0.15em;
+    top: -0.4em;
+    position: relative;
+    font-family: Neuton, serif; }
+  .footnote-label {
+    cursor: pointer; }
+    .footnote-label::after {
+      content: attr(data-footnote-count);
+      font-size: 0.666em;
+      vertical-align: top;
+      margin: 0 0.15em 0;
+      top: -0.4em;
+      position: relative;
+      font-family: Neuton, serif; }
+    @media (min-width: 98em) {
+      .footnote-label {
+        cursor: auto; } }
+
+.sans {
+  font-family: "Lato", "Gill Sans", Calibri, sans-serif;
+  letter-spacing: 0.03em; }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  p {
+    font-weight: 500; }
+
+  body {
+    font-size: 1.55em; } }
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  p {
+    font-weight: 500; }
+
+  body {
+    font-size: 1.55em; } }
