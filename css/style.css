@@ -73,35 +73,44 @@ header[role="banner"] {
         margin: 0 auto; } }
 
 body {
-  font-size: 1.2em;
-  line-height: 1.6em;
+  font-size: 0.9em;
   font-family: Neuton, "Georgia", serif;
   color: #444;
   background-color: #fffff8;
   margin: 0; }
+  @media (min-width: 30em) {
+    body {
+      font-size: 1em; } }
   body::before {
     content: "";
     position: fixed;
     width: 100%;
     top: 0;
-    border-top: 1em solid #444;
+    border-top: 1.4rem solid #444;
     z-index: 999; }
-  @media (min-width: 30em) {
-    body {
-      font-size: 1.4em; } }
+
+::selection {
+  background-color: #444;
+  color: #fffff8; }
 
 article {
+  font-size: 0.9333333333rem;
+  line-height: 2.1rem;
   width: 80%;
   position: relative;
-  margin: 10em auto 10em; }
+  margin: 7.0875rem auto 7.0875rem; }
+  @media (min-width: 30em) {
+    article {
+      font-size: 1.4rem; } }
   @media (min-width: 48em) {
     article {
       width: 75%;
-      max-width: 25em; } }
+      max-width: 25em;
+      margin: 15.946875rem auto 15.946875rem; } }
   @media (min-width: 61.25em) {
     article {
       float: right;
-      margin: 10em 10% 10em 10em;
+      margin: 15.946875rem 10% 15.946875rem 15.946875rem;
       width: 65%; } }
   @media (min-width: 71.25em) {
     article {
@@ -110,7 +119,7 @@ article {
       max-width: none; } }
   @media (min-width: 80em) {
     article {
-      margin: 10em auto 10em;
+      margin: 15.946875rem auto 15.946875rem;
       float: none; } }
   article a {
     color: #444;
@@ -121,33 +130,42 @@ article {
     text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
     background-position: 0% 99%, 100% 99%, 0% 99%; }
     article a:hover {
-      color: #111; }
+      color: #fdd78c;
+      background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#fdd78c, #fdd78c);
+      background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+      background-repeat: no-repeat, no-repeat, repeat-x;
+      text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+      background-position: 0% 99%, 100% 99%, 0% 99%; }
 
 @media (min-width: 48em) {
   .subtitle {
-    font-size: 1.5em;
+    font-size: 2.1rem;
     letter-spacing: 0.01em;
-    line-height: 1.3; } }
+    line-height: 3.15rem;
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none; } }
 
 header:not([role="banner"])::after {
-  height: 2px;
+  height: 0;
   content: "";
-  width: 65px;
-  border-top: 2px solid #444;
+  width: 4.725rem;
+  border-top: #fdd78c solid 0.1843621399rem;
   display: block;
-  margin-bottom: 2.25em; }
+  margin-bottom: 3.15rem; }
 
 p {
-  font-size: 1em;
+  font-size: 1.4rem;
   vertical-align: baseline;
-  margin-top: 1.4rem;
-  margin-bottom: 1.4rem; }
+  margin: 1.4rem 0 1.4rem;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto; }
 
 h1,
 h2,
 h3 {
   font-family: "Abril Fatface", Neuton, "Georgia", serif;
-  line-height: 1em;
   width: 80%;
   font-weight: 600; }
 
@@ -156,60 +174,72 @@ h5::after,
 h6::after {
   content: "Consider reformatting your document.";
   color: red;
-  margin-left: 1em;
+  margin-left: 0.9333333333rem;
   text-decoration: none;
   font-style: italic;
   font-weight: 400; }
 
 h1 {
-  font-size: 2em;
-  margin: 0.25em 0 0.7em;
+  font-size: 3.15rem;
+  line-height: 3.15rem;
+  margin: 0.6222222222rem 0 2.1rem;
   font-weight: 500; }
-  @media (min-width: 30em) {
+  @media (min-width: 38.75em) {
     h1 {
-      font-size: 2.25em; } }
+      font-size: 3.15rem; } }
   @media (min-width: 48em) {
     h1 {
-      font-size: 3.375em; } }
+      font-size: 4.725rem;
+      line-height: 4.725rem; } }
 
 h2 {
-  font-size: 1.25em;
-  margin: 3.375em 0 1.5em;
+  font-size: 1.4rem;
+  margin: 4.725rem 0 1.4rem;
   letter-spacing: 0.06em;
-  line-height: 1.3em;
+  line-height: 2.1rem;
   text-transform: uppercase;
   font-weight: 600; }
+  @media (min-width: 48em) {
+    h2 {
+      font-size: 2.1rem;
+      line-height: 3.15rem; } }
   h2::after {
     height: 0;
     content: "";
-    width: 65px;
-    border-top: 1px dotted #444;
+    width: 4.725rem;
+    border-top: #fdd78c dotted 0.1229080933rem;
     display: block;
-    margin: 0.666em 0 0; }
+    margin: 0.9333333333rem 0 0; }
 
 h3 {
   font-family: "Lato", "Gill Sans", Calibri, sans-serif;
-  font-size: 0.85em;
-  margin: 3.375em 0 1em;
+  font-size: 1.4rem;
+  margin: 4.725rem 0 1.4rem;
   letter-spacing: 0.05em;
-  line-height: 1.5em;
+  line-height: 2.1rem;
   font-weight: 700;
   text-transform: uppercase; }
 
 blockquote {
-  margin: 1em 1.5em 1.5em 1.5em;
+  margin: 1.4rem 2.1rem 2.1rem 0;
+  padding-left: 2.1rem;
   font-style: italic;
   font-family: "Lato", "Gill Sans", Calibri, sans-serif;
-  font-size: 0.85em; }
+  font-size: 0.9333333333rem;
+  line-height: 1.4rem;
+  border-left: #fdd78c solid 0.1843621399rem; }
+  blockquote p {
+    font-size: 0.9333333333rem;
+    line-height: 2.1rem; }
   blockquote footer {
-    font-size: 0.85em;
     text-align: right; }
 
 .footnote {
   display: none;
   font-family: "Lato", "Gill Sans", Calibri, sans-serif;
-  margin: 1em 0 1.5em 1.5em;
-  font-size: 0.85em; }
+  margin: 1.4rem 0 2.1rem 2.1rem;
+  font-size: 0.9333333333rem;
+  line-height: 2.1rem; }
   .footnote.display {
     display: block; }
   @media (min-width: 61.25em) {
@@ -218,18 +248,17 @@ blockquote {
       display: block;
       float: left;
       position: absolute;
-      left: -16.931rem;
-      width: 13.781rem;
+      left: -15.946875rem;
+      width: 13em;
       text-align: right;
       clear: both;
-      margin: -2rem 0 1rem;
-      font-size: 0.85em;
-      line-height: 1.5em;
-      background-color: transparent;
-      border-radius: 2px; } }
+      margin: -2.1rem 0 1.4rem;
+      padding: 0 2.1rem 0 0;
+      font-size: 0.9333333333rem;
+      line-height: 2.1rem; } }
   .footnote::before {
     content: attr(data-footnote-count);
-    font-size: 0.666em;
+    font-size: 0.9333333333rem;
     vertical-align: top;
     margin: 0 0.3em 0 0.15em;
     top: -0.4em;
@@ -239,7 +268,7 @@ blockquote {
     cursor: pointer; }
     .footnote-label::after {
       content: attr(data-footnote-count);
-      font-size: 0.666em;
+      font-size: 0.9333333333rem;
       vertical-align: top;
       margin: 0 0.15em 0;
       top: -0.4em;
