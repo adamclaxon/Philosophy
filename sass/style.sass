@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,400i,700,700i|Neuton:400,400i,700'
 
+@import 'modular-scale/modular-scale'
 @import 'mixins'
 @import 'nav'
-@import 'modular-scale/modular-scale'
 
 body
   font-size: 0.9em
@@ -14,13 +14,13 @@ body
   @include bp(30up)
     font-size: 1em
 
-  &::before
-    content: ""
-    position: fixed
-    width: 100%
-    top: 0
-    border-top: ms(0) solid $text
-    z-index: 999
+//  &::before
+//    content: ""
+//    position: fixed
+//    width: 100%
+//    top: 0
+//    border-top: ms(0) solid $accent
+//    z-index: 999
 
 ::selection
   background-color: $text
