@@ -31,7 +31,7 @@ article
   line-height:  ms(1)
   width: 80%
   position: relative
-  margin: ms(6) auto ms(6)
+  margin: ms(4) auto ms(4)
 
   @include bp(30up)
     font-size: ms(0)
@@ -39,6 +39,7 @@ article
   @include bp(48up)
     width: 75%
     max-width: 25em
+    margin: ms(6) auto ms(6)
 
   @include bp(61up)
     float: right
@@ -128,12 +129,16 @@ h1
     line-height: ms(3)
 
 h2
-  font-size: ms(1)
+  font-size: ms(0)
   margin: ms(3) 0 ms(0)
   letter-spacing: 0.06em
   line-height: ms(1)
   text-transform: uppercase
   font-weight: 600
+
+  @include bp(48up)
+    font-size: ms(1)
+    line-height: ms(2)
 
   &::after
     height: 0

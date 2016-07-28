@@ -98,14 +98,15 @@ article {
   line-height: 2.1rem;
   width: 80%;
   position: relative;
-  margin: 15.946875rem auto 15.946875rem; }
+  margin: 7.0875rem auto 7.0875rem; }
   @media (min-width: 30em) {
     article {
       font-size: 1.4rem; } }
   @media (min-width: 48em) {
     article {
       width: 75%;
-      max-width: 25em; } }
+      max-width: 25em;
+      margin: 15.946875rem auto 15.946875rem; } }
   @media (min-width: 61.25em) {
     article {
       float: right;
@@ -192,12 +193,16 @@ h1 {
       line-height: 4.725rem; } }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   margin: 4.725rem 0 1.4rem;
   letter-spacing: 0.06em;
   line-height: 2.1rem;
   text-transform: uppercase;
   font-weight: 600; }
+  @media (min-width: 48em) {
+    h2 {
+      font-size: 2.1rem;
+      line-height: 3.15rem; } }
   h2::after {
     height: 0;
     content: "";
