@@ -2,41 +2,48 @@
 .menu-button {
   background: transparent;
   border: none;
-  color: #444; }
+  color: #444;
+  font-size: 1.4rem;
+  font-family: "Lato", "Gill Sans", Calibri, sans-serif; }
 
 nav[role="navigation"] {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -50%;
-  width: 50%;
+  left: -100%;
+  width: 100%;
   background: #fdd78c;
   color: #fffff8;
-  z-index: 9;
+  z-index: 1;
   transition: opacity 500ms ease-in-out, left 500ms ease-in-out;
   pointer-events: none;
-  opacity: 0; }
-  @media (min-width: 61.25em) {
-    nav[role="navigation"] {
-      width: 23.9203125rem; } }
+  opacity: 0;
+  box-shadow: 15px 5px 40px 5px rgba(227, 200, 173, 0.4), 60px 20px 90px rgba(0, 0, 0, 0.08); }
   nav[role="navigation"].open {
     opacity: 0.95;
     pointer-events: all;
     left: 0; }
+  @media (min-width: 30em) {
+    nav[role="navigation"] {
+      width: 50%;
+      left: -50%; } }
+  @media (min-width: 61.25em) {
+    nav[role="navigation"] {
+      width: 23.9203125rem; } }
   nav[role="navigation"] ul {
     list-style: none;
     text-align: left;
     font-size: 2.1rem;
-    font-family: "Abril Fatface", Neuton, "Georgia", serif;
+    font-family: "Lato", "Gill Sans", Calibri, sans-serif;
     text-transform: uppercase;
     line-height: 3.15rem;
     font-weight: 400;
     letter-spacing: 0.01em;
     padding: 0;
-    margin: 4.725rem 20%; }
+    margin: 7.0875rem 20%; }
     @media (min-width: 48em) {
       nav[role="navigation"] ul {
-        margin: 4.725rem 7.0875rem; } }
+        margin: 15.946875rem 7.0875rem; } }
     nav[role="navigation"] ul li {
       padding: 0;
       width: auto;
@@ -206,30 +213,38 @@ h3 {
   text-transform: uppercase; }
 
 blockquote {
-  margin: 1.4rem 2.1rem 2.1rem 0;
+  margin: 1.4rem 0 2.1rem;
   padding-left: 2.1rem;
-  font-style: italic;
-  font-family: "Lato", "Gill Sans", Calibri, sans-serif;
-  font-size: 0.9333333333rem;
-  line-height: 1.4rem;
+  font-family: Neuton, "Georgia", serif;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   border-left: #fdd78c solid 0.1843621399rem; }
+  @media (min-width: 61.25em) {
+    blockquote {
+      margin: 1.4rem 2.1rem 2.1rem 0; } }
   blockquote p {
-    font-size: 0.9333333333rem;
+    font-size: 1.4rem;
     line-height: 2.1rem; }
   blockquote footer {
-    text-align: right; }
+    font-size: 0.9333333333rem;
+    font-style: normal; }
 
 .footnote {
   display: none;
-  font-family: "Lato", "Gill Sans", Calibri, sans-serif;
+  font-family: Neuton, "Georgia", serif;
   margin: 1.4rem 0 2.1rem 2.1rem;
-  font-size: 0.9333333333rem;
+  font-size: 1.4rem;
   line-height: 2.1rem; }
+  @media (min-width: 61.25em) {
+    .footnote {
+      font-size: 0.9333333333rem;
+      line-height: 2.1rem; } }
   .footnote.display {
     display: block; }
   @media (min-width: 61.25em) {
     .footnote {
-      color: #7a7a7a;
+      font-family: "Lato", "Gill Sans", Calibri, sans-serif;
+      color: #6a6a6a;
       display: block;
       float: left;
       position: absolute;

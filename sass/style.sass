@@ -158,34 +158,42 @@ h3
   text-transform: uppercase
 
 blockquote
-  margin: ms(0) ms(1) ms(1) 0
+  margin: ms(0) 0 ms(1)
   padding-left: ms(1)
-  font-style: italic
-  font-family: "Lato", "Gill Sans", Calibri, sans-serif
-  font-size: ms(-1)
-  line-height: ms(0)
+  font-family: Neuton, "Georgia", serif
+  font-size: ms(0)
+  line-height: ms(1)
   border-left: $accent solid ms(-5)
 
+  @include bp(61up)
+    margin: ms(0) ms(1) ms(1) 0
+
   p
-    font-size: ms(-1)
+    font-size: ms(0)
     line-height: ms(1)
 
-
   footer
-    text-align: right
+    font-size: ms(-1)
+    font-style: normal
+
 
 .footnote
   display: none
-  font-family: "Lato", "Gill Sans", Calibri, sans-serif
+  font-family: Neuton, "Georgia", serif
   margin: ms(0) 0 ms(1) ms(1)
-  font-size: ms(-1)
+  font-size: ms(0)
   line-height: ms(1)
+
+  @include bp(61up)
+    font-size: ms(-1)
+    line-height: ms(1)
 
   &.display
     display: block
 
 
   @include bp(61up)
+    font-family: "Lato", "Gill Sans", Calibri, sans-serif
     color: $aside
     display: block
     float: left
