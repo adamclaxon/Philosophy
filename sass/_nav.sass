@@ -3,41 +3,43 @@
   border: none
   color: $text
   font-size: ms(0)
-  font-family: "Lato", "Gill Sans", Calibri, sans-serif
+  font-family: $sans
+  text-transform: uppercase
+  width: rem(40, 16)
+  height: rem(40, 16)
 
 nav[role="navigation"]
   position: fixed
   top: 0
   bottom: 0
-  left: -100%
+  right: -100%
   width: 100%
   background: $accent
   color: $background
   z-index: 1
-  transition: opacity 500ms ease-in-out, left 500ms ease-in-out
+  transition: opacity 500ms ease-in-out, right 500ms ease-in-out
   pointer-events: none
   opacity: 0
-  box-shadow: 15px 5px 40px 5px rgba(227, 200, 173, 0.4), 60px 20px 90px rgba(0, 0, 0, 0.08)
 
   &.open
-    opacity: 0.95
+    opacity: 0.9
     pointer-events: all
-    left: 0
+    right: 0
 
   @include bp(30up)
     width: 50%
-    left: -50%
+    right: -50%
 
   @include bp(61up)
     width: ms(7)
 
   ul
     list-style: none
-    text-align: left
-    font-size: ms(1)
-    font-family: "Lato", "Gill Sans", Calibri, sans-serif
+    text-align: right
+    font-size: ms(0)
+    font-family: $sans
     text-transform: uppercase
-    line-height: ms(2)
+    line-height: ms(1)
     font-weight: 400
     letter-spacing: 0.01em
     padding: 0
@@ -71,8 +73,10 @@ header[role="banner"]
   .header-wrapper
     margin: 0 auto
     width: 80%
+    text-align: right
+    box-sizing: border-box
 
     @include bp(48up)
-      width: 75%
-      max-width: 25em
-      margin: 0 auto
+      width: 100%
+      padding: 0 ms(4)
+      margin: 0
